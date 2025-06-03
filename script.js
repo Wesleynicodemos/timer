@@ -34,11 +34,12 @@ zerar.addEventListener('click', (e)=> {
     contador = null
     timer.innerHTML = "00:00:00"
     iniciar.innerText = "Iniciar"
+    timer.classList.remove('pausado') 
 })
 
  function contadorseg() {
     seg++
-    
+
     if (seg > 59) {
     seg=0
     min++
